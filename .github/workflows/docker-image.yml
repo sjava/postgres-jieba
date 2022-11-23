@@ -21,7 +21,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD 
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag lesca/postgres-jieba:$(date +%s)
+      run: docker build . --file Dockerfile --tag lesca/postgres-jieba:latest
       
     - name: Docker Push
-      run: docker push lesca/postgres-jieba:$(date +%s)
+      run: docker push lesca/postgres-jieba
