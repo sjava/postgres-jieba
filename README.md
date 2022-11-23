@@ -1,5 +1,12 @@
+# Docker Image on Docker Hub
+https://hub.docker.com/r/lesca/postgres-jieba
 
 # Get started
+```
+docker run -e POSTGRES_PASSWORD=password -e POSTGRES_USER=test -e POSTGRES_DB=testdb lesca/postgres11-jieba
+```
+
+# For Developers
 ## Build
 ```bash
 . build
