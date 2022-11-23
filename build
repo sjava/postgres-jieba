@@ -1,1 +1,1 @@
-docker build -t postgres-jieba .
+docker build . --file Dockerfile --tag lesca/postgres-jieba:$(date +%s)
