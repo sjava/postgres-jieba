@@ -1,1 +1,5 @@
-docker build . --file Dockerfile --tag lesca/postgres-jieba:latest
+sudo docker build \
+	--build-arg https_proxy=http://localhost:7890 \
+	--build-arg http_proxy=http://localhost:7890 \
+	--network=host \
+	--tag lesca/postgres-jieba:latest .
